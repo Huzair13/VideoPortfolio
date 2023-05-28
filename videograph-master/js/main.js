@@ -1,26 +1,10 @@
-/*  ---------------------------------------------------
-    Template Name: Dreams
-    Description: Dreams wedding template
-    Author: Colorib
-    Author URI: https://colorlib.com/
-    Version: 1.0
-    Created: Colorib
----------------------------------------------------------  */
-
 'use strict';
 
 (function ($) {
 
-    /*------------------
-        Preloader
-    --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
-
-        /*------------------
-            Portfolio filter
-        --------------------*/
         $('.portfolio__filter li').on('click', function () {
             $('.portfolio__filter li').removeClass('active');
             $(this).addClass('active');
